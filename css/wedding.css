@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'nellasue';
+    src: url('../font/nellasuedemo-webfont.eot');
+    src: url('../font/nellasuedemo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/nellasuedemo-webfont.woff2') format('woff2'),
+         url('../font/nellasuedemo-webfont.woff') format('woff'),
+         url('../font/nellasuedemo-webfont.ttf') format('truetype'),
+         url('../font/nellasuedemo-webfont.svg#nella_sue_demoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dawning_of_a_new_dayregular';
+    src: url('../font/dawningofanewday-webfont.eot');
+    src: url('../font/dawningofanewday-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dawningofanewday-webfont.woff2') format('woff2'),
+         url('../font/dawningofanewday-webfont.woff') format('woff'),
+         url('../font/dawningofanewday-webfont.ttf') format('truetype'),
+         url('../font/dawningofanewday-webfont.svg#dawning_of_a_new_dayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body {
     position: relative;
     height: 100%;
@@ -29,11 +54,12 @@ header,
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    font-family: nellasue;
 }
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5em;
     background-color: ivory;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -50,10 +76,6 @@ header,
     align-items: center;
 }
 
-.show-grid {
-    margin-bottom: 15px;
-}
-
 .show-grid.[class^=col-] {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -61,14 +83,17 @@ header,
     border: 1px solid rgba(86,61,124,.2);
 }
 
-.show-grid p {
-    padding-left: 15px;
-}
-
 .show-grid div {
     height: 200px;
-    padding-top: 75px;
-    box-shadow: 0px 0px 0px 5px #f00;
+    padding-top: 87px;
+    background-color: #f3554c;
+    opacity : 0.75;
+    margin:10px;
+}
+
+.show-grid p{
+    padding-left: 15px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .home {
@@ -77,9 +102,38 @@ header,
     background-position: center;
 }
 
+.agendaContent {
+    padding: 30px;
+}
+
 .maps {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+.special {
+    font-family: dawning_of_a_new_dayregular;
+}
+
+.title {
+    font-size:2.3em;
+}
+
+@media screen and (max-width: 992px) {
+    .home {
+        background-image: url('../img/bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .show-grid div {
+        height: auto;
+        padding: 1em;
+        background-color: lightcoral;
+        opacity : 0.5;
+        margin-bottom: 1em;
+    }
+}
+
