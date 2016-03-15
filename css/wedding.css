@@ -121,6 +121,15 @@ header,
     font-size:2.3em;
 }
 
+.preparations img {
+    width:150px;
+}
+
+.places img {
+    width:100%;
+    height:100%;
+}
+
 @media screen and (max-width: 992px) {
     .home {
         background-image: url('../img/bg.png');
@@ -128,12 +137,25 @@ header,
         background-position: center;
         background-size: contain;
     }
+    
     .show-grid div {
-        height: auto;
-        padding: 1em;
+        height: 1.5em;
+        padding: 0.2em;
         background-color: lightcoral;
         opacity : 0.5;
-        margin-bottom: 1em;
+    }
+    
+    .title {
+        font-size:1.5em;
+    }
+    
+    .preparations img {
+        width:75px;
+    }
+    
+    .places img {
+        width: auto;
+        height:150px;
     }
 }
 
