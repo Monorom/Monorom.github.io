@@ -130,6 +130,29 @@ header,
     height:100%;
 }
 
+#hebergement {
+    background-color: rgba(255,255,255,0);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#hebergement ul{
+    padding-left: 0px;
+}
+
+#hebergement li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+#hebergement p{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.show-grid .a1 {
+    margin-left:30px;
+}
+
 @media screen and (max-width: 992px) {
     .home {
         background-image: url('../img/bg.png');
@@ -157,5 +180,16 @@ header,
         width: auto;
         height:150px;
     }
+    
+    #hebergement {
+        background-color: rgba(255,255,255,0);
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+    
+    .show-grid .a1 {
+        margin-left:10px;
+    }
 }
+
 
